@@ -40,3 +40,15 @@ ostream& operator<<(ostream& os, Time& t) {
     os << t.hours << " 시간 " << t.mins << " 분";
     return os;
 }
+
+NewDayTime::NewDayTime() : Time() {
+    day = 0;
+}
+
+NewDayTime::NewDayTime(int h, int m, int d) : Time(h, m) {
+    day = d;
+}
+
+void NewDayTime::show() {
+    cout << day << " 일 " << getHours << " 시간 " << getMins << " 분" << endl; 
+}

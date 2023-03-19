@@ -3,9 +3,11 @@
 
 using namespace std;
 
+const int MAX = 2;
+
 int main() {
-    int day1time[2];
-    int day2time[2];
+    int day1time[MAX];
+    int day2time[MAX];
 
     cout << "1번째 시: ";
     cin >> day1time[0];
